@@ -1,0 +1,42 @@
+[package]
+name = "pidgeonhole"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix = "0.13.1"
+actix-rt = "2.9.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+async-std ="1.9.0"
+futures = "0.3.15"
+rand = "0.8.5"
+async-recursion = "1.0.5"
+
+num-traits = "0.2"
+num-derive = "0.4.1"
+dylib = "0.0.3"
+colored = "2.0"
+num_cpus = "1.16.0"
+rayon = "1.8.0"
+tokio = {version = "1.34.0", features = ["sync", "time", "macros"]}
+clap = { version = "4.4.8", features = ["derive"] }
+
+[[bin]]
+name = "local"
+path = "src/local/main.rs"
+
+[[bin]]
+name = "ecommerce"
+path = "src/ecommerce/main.rs"
+
+[[bin]]
+name = "generators"
+path = "src/generators/main.rs"
+
+[[bin]]
+name = "dios"
+path = "src/desconexion/main.rs"

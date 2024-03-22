@@ -1,0 +1,6 @@
+/target
+/configs
+/.vscode
+
+**/*.bkp
+**/*.dtmp
